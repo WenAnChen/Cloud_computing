@@ -1,0 +1,9 @@
+  5 version: '3'
+  4 services:
+  3   nginx:
+  2     image: nginx:latest
+  1     ports:
+6         - 80:80
+  1       - 443:443
+  2     volumes:
+  3       - /home/ec2-user/index.html:/usr/share/nginx/html/index.html
